@@ -1,11 +1,11 @@
 sequenceDiagram
-	participant browser
-	participant server
+    participant browser
+    participant server
 
-	browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-	activate server
-	server-->>browser: 302 redirect
-	deactivate server
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: 302 redirect
+    deactivate server
 
     Note right of server: The server executes the code that adds the new note to the list
 
